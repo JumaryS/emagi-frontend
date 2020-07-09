@@ -18,10 +18,15 @@ let start= process.argv.slice(2)
         console.log(emagify(start.slice(1)))
         }// ill need an else if statment when 
     else if (start.includes('search')){
-        console.log(search(start.slice(2)))
+        console.log(search(start.slice(1)))
     }else if(start.includes('random')){
-        console.log(random(start.slice(3)))
+        console.log(random(start.slice(1)))
     }
+    else if (start === ''){
+        console.log()
+    }
+    
+    // return start
     
 // }
 // console.log(usersInput())
