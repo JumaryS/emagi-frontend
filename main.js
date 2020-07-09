@@ -12,15 +12,15 @@ let start= process.argv.slice(2)
 // let wordInput = getInput[0]
 
 
-// const usersInput = function(){
-    
-    if(start[0] === 'convert'){
+// const usersInput = function(){ the function is not needed 
+    // youll need to find what comes after start(process.argv) so ill need an if statement
+    if(start.includes('convert')){
         console.log(emagify(start.slice(1)))
-        }
-    else if (words[i]===('search')){
-        console.log(search(words.slice(1)))
-    }else if(random){
-        console.log(random)
+        }// ill need an else if statment when 
+    else if (start.includes('search')){
+        console.log(search(start.slice(2)))
+    }else if(start.includes('random')){
+        console.log(random(start.slice(3)))
     }
     
 // }
