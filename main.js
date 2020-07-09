@@ -13,13 +13,13 @@ let start= process.argv.slice(2)
 
 // const usersInput = function(){ the function is not needed 
     // youll need to find what comes after start(process.argv) so ill need an if statement
-    if(start[0].includes('convert')){
+    if(start[0]==='convert'){
         console.log(emagify(start.slice(1)))
         }// ill need an else if statment when 
-    else if (start.includes('search')){
+    else if (start[0]==='search'){
         console.log(search(start.slice(1)))
     }
-    else if(start[0].includes('random')){
+    else if(start[0]==='random'){
         console.log(random(symbols))
     }
     else{
